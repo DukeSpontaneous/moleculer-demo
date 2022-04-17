@@ -1,32 +1,33 @@
 [![Moleculer](https://badgen.net/badge/Powered%20by/Moleculer/0e83cd)](https://moleculer.services)
 
-# moleculer-demo
-This is a [Moleculer](https://moleculer.services/)-based microservices project. Generated with the [Moleculer CLI](https://moleculer.services/docs/0.14/moleculer-cli.html).
+# moleculer-demo-min
 
-## Usage
-Start the project with `npm run dev` command. 
-In the terminal, try the following commands:
-- `nodes` - List all connected nodes.
-- `actions` - List all registered service actions.
-- `call greeter.hello` - Call the `greeter.hello` action.
-- `call greeter.welcome --name John` - Call the `greeter.welcome` action with the `name` parameter.
+Это микросервисный проект на основе [Moleculer](https://moleculer.services/). Он создан с помощью [Moleculer CLI](https://moleculer.services/docs/0.14/moleculer-cli.html) (минимальная сборка).
 
+## Использование
 
+Запустите проект командой `npm run dev`.
+Попробуйте использовать в терминале следующие команды:
 
-## Services
-- **api**: API Gateway services
-- **greeter**: Sample service with `hello` and `welcome` actions.
+-   `nodes` - Перечислит все подключенные узлы (nodes).
+-   `actions` - Преречислит все зарегистрированные действия (actions) служб (services).
+-   `call greeter.hello` - Вызывает действие `greeter.hello`.
+-   `call greeter.welcome --name John` - Вызывает действие `greeter.welcome` с параметром `name`.
 
+## Службы (Services)
 
-## Useful links
+-   **api**: Службы Шлюза API
+-   **greeter**: Образец службы с действиями `hello` и `welcome`.
 
-* Moleculer website: https://moleculer.services/
-* Moleculer Documentation: https://moleculer.services/docs/0.14/
+## Полезные ссылки
 
-## NPM scripts
+-   Сайт Moleculer: https://moleculer.services/
+-   Документация Moleculer: https://moleculer.services/docs/0.14/
 
-- `npm run dev`: Start development mode (load all services locally with hot-reload & REPL)
-- `npm run start`: Start production mode (set `SERVICES` env variable to load certain services)
-- `npm run cli`: Start a CLI and connect to production. Don't forget to set production namespace with `--ns` argument in script
-- `npm run ci`: Run continuous test mode with watching
-- `npm test`: Run tests & generate coverage report
+## Сценарии NPM
+
+-   `npm run dev`: Запускает режим разработки (загружает все службы локально с горячей подгрузкой `--hot` и _REPL_)
+-   `npm run start`: Запускает промышленный рабочий режим (устанавливает переменую окружения `SERVICES` для запуска определённых служб)
+-   `npm run cli`: Запускает CLI и подключается к запущенному промышленному приложению. Не забудьте установаить промышленное пространство имён через аргумент `--ns` в сценарии
+-   `npm run ci`: Запускает режим непрерывного тестирования с наблюдением за изменениями
+-   `npm test`: Запускает тесты и создаёт отчёт о тестовом покрытии
